@@ -21,7 +21,15 @@ public class Jogador {
 
     public String getNome (){return this.nome ;}
 
+    private int pontuacaoTotal = 0;
 
+    public int getPontuacaoTotal() {
+        return pontuacaoTotal;
+    }
+
+    public void adicionarPontuacao(int pontos) {
+        this.pontuacaoTotal += pontos;
+    }
 
     @Override
     public String toString() {
